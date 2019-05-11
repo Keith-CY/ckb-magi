@@ -1,12 +1,13 @@
-import { Module } from '@nestjs/common'
+import { Module, Global } from '@nestjs/common'
 import { SyncService } from './sync.service'
 import { SyncController } from './sync.controller'
-import { BlocksService } from '../blocks/blocks.service'
-import { ConfigModule } from './../config/config.module'
+import { ConfigModule } from '../../config/config.module'
 
+@Global()
 @Module({
-  providers: [SyncService, BlocksService],
+  providers: [SyncService],
   controllers: [SyncController],
   imports: [ConfigModule],
+  exports: [SyncService],
 })
 export class SyncModule {}

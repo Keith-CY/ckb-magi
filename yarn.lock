@@ -18,52 +18,48 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@nervosnetwork/ckb-sdk-core@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@nervosnetwork/ckb-sdk-core/-/ckb-sdk-core-0.9.0.tgz#acf606cd253d98fd23248f797e369799977c32db"
-  integrity sha512-8afJFP/5jK9equSD36mROTr2AHGS+vd4i3JRuB9qW/oJOtp6YoShnH9dbBSXfLrcyx/j/QlfTcmIX5LSNaohww==
+"@nervosnetwork/ckb-sdk-core@^0.11.0-alpha.0":
+  version "0.11.0-alpha.0"
+  resolved "https://registry.npmjs.org/@nervosnetwork/ckb-sdk-core/-/ckb-sdk-core-0.11.0-alpha.0.tgz#2b5aae7aa41feb8aae7f73ce388af98cd357d768"
+  integrity sha512-8jFkts9ZuOckUd3AX1aESssvV32dGAIvF7tZd1MfN8HZvxIgfjmhUmac9FIpnhnWCl2865NUMvO9y2KZwNcSQA==
   dependencies:
-    "@nervosnetwork/ckb-sdk-rpc" "^0.9.0"
-    "@nervosnetwork/ckb-sdk-utils" "^0.9.0"
-    "@nervosnetwork/ckb-sdk-wallet" "^0.9.0"
-    "@nervosnetwork/ckb-types" "^0.9.0"
+    "@nervosnetwork/ckb-sdk-rpc" "^0.11.0-alpha.0"
+    "@nervosnetwork/ckb-sdk-utils" "^0.11.0-alpha.0"
+    "@nervosnetwork/ckb-sdk-wallet" "^0.11.0-alpha.0"
+    "@nervosnetwork/ckb-types" "^0.11.0-alpha.0"
 
-"@nervosnetwork/ckb-sdk-rpc@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@nervosnetwork/ckb-sdk-rpc/-/ckb-sdk-rpc-0.9.0.tgz#521e3f4a811945890e4b015b04da02ee5387573c"
-  integrity sha512-vvfk7mfg6yoMLQ8WoiNEKP0zufbFaFRn+ybBSgTjEXukrIpO8FCbwQvx3809PlG+kJMDpChMp2Q9dOn/xfUGgQ==
+"@nervosnetwork/ckb-sdk-rpc@^0.11.0-alpha.0":
+  version "0.11.0-alpha.0"
+  resolved "https://registry.npmjs.org/@nervosnetwork/ckb-sdk-rpc/-/ckb-sdk-rpc-0.11.0-alpha.0.tgz#f33558c36b8299f08f46e59a17ff7044b2aa8955"
+  integrity sha512-ZcgRzAwfyDQyQ1GVKpwg2xcYM2GmJbhv/IYDQvA2UgPFUki0/AbRippGDMSEwTlnZZbCDscKMMnR8hv4XlYcHA==
   dependencies:
-    "@nervosnetwork/ckb-sdk-utils" "^0.9.0"
+    "@nervosnetwork/ckb-sdk-utils" "^0.11.0-alpha.0"
     axios "^0.18.0"
 
-"@nervosnetwork/ckb-sdk-utils@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@nervosnetwork/ckb-sdk-utils/-/ckb-sdk-utils-0.9.0.tgz#eecf8bf2c07bbd5c019587c45af630ba8c2ac080"
-  integrity sha512-H47X6OnKWFdc+/TYSSVdEYx++okjKo1N6Ot6FFuh1FqkOQYXZTQhS2IKeGdio9UVbklc6sFagrk9+RN1GNrbbA==
+"@nervosnetwork/ckb-sdk-utils@^0.11.0-alpha.0":
+  version "0.11.0-alpha.0"
+  resolved "https://registry.npmjs.org/@nervosnetwork/ckb-sdk-utils/-/ckb-sdk-utils-0.11.0-alpha.0.tgz#f1136f12cedda2e9cdcb0d2165941afaf2e92adb"
+  integrity sha512-9//7WQUFjw0tzsNbDKzjqSwFyM5fsHU0vdKc8IdIeZFnGdwj1iRZuFJOZkqJfFcBmy7M0fvobMV71ZKNx5Huiw==
   dependencies:
-    "@nervosnetwork/ckb-types" "^0.9.0"
-    blake2b-wasm "^1.1.7"
-    bs58check "^2.1.2"
-    eth-lib "^0.2.8"
-    randombytes "^2.0.6"
-    safe-buffer "^5.1.2"
-    tiny-secp256k1 "^1.0.1"
-    typeforce "^1.18.0"
-    utf8 "^3.0.0"
-    wif "^2.0.6"
+    "@nervosnetwork/ckb-types" "^0.11.0-alpha.0"
+    blake2b-wasm "1.1.7"
+    bs58check "2.1.2"
+    eth-lib "0.2.8"
+    safe-buffer "5.1.2"
+    tiny-secp256k1 "1.0.1"
 
-"@nervosnetwork/ckb-sdk-wallet@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@nervosnetwork/ckb-sdk-wallet/-/ckb-sdk-wallet-0.9.0.tgz#2e23b9a29a7f0e00343dc0c959a41d411a9ea8f5"
-  integrity sha512-yiDHil/Q7loHdH8kKdaUKxYtiWwv5IYOfQFwBmgJS7xn3PFoM5z1mky9ZvIx+q5D5T1aRdbmCbspupsHff6pEw==
+"@nervosnetwork/ckb-sdk-wallet@^0.11.0-alpha.0":
+  version "0.11.0-alpha.0"
+  resolved "https://registry.npmjs.org/@nervosnetwork/ckb-sdk-wallet/-/ckb-sdk-wallet-0.11.0-alpha.0.tgz#7f371846a58086b1d3a09c7b8fd7082d8718a381"
+  integrity sha512-eVsOoxO366gl77Bd+H2K01SclgF5nZ5wg/BRRCvHBWKYA4CE3MS5/oRReK45hCNLmJk6x+XLVhBmjkwCcxtXmw==
   dependencies:
-    "@nervosnetwork/ckb-sdk-rpc" "^0.9.0"
-    "@nervosnetwork/ckb-sdk-utils" "^0.9.0"
+    "@nervosnetwork/ckb-sdk-rpc" "^0.11.0-alpha.0"
+    "@nervosnetwork/ckb-sdk-utils" "^0.11.0-alpha.0"
 
-"@nervosnetwork/ckb-types@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@nervosnetwork/ckb-types/-/ckb-types-0.9.0.tgz#13367dec3460bcd7a80c6f3d01965a4e52004936"
-  integrity sha512-FILexLJ1cHaABN0IMsMzvRBujrsJy9FcFTEsrewMj95WHyUI8+XBGfa1I/1L6hwXp2t1AYX78gUXEtdC5iHazw==
+"@nervosnetwork/ckb-types@^0.11.0-alpha.0":
+  version "0.11.0-alpha.0"
+  resolved "https://registry.npmjs.org/@nervosnetwork/ckb-types/-/ckb-types-0.11.0-alpha.0.tgz#6a456cc500eafbb7028947bef6a17241164c14ac"
+  integrity sha512-1Ebp2qEBt4eAvycCxGW7nFwBE/zBVb+MeceoqAUJm8w/vfM8bcPiezacDCs1QZx5CqQF2Jd59mJ0MbxyQBR/ag==
 
 "@nestjs/common@^6.0.0":
   version "6.1.1"
@@ -685,7 +681,7 @@ bindings@^1.3.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
-blake2b-wasm@^1.1.7:
+blake2b-wasm@1.1.7:
   version "1.1.7"
   resolved "https://registry.npmjs.org/blake2b-wasm/-/blake2b-wasm-1.1.7.tgz#e4d075da10068e5d4c3ec1fb9accc4d186c55d81"
   integrity sha512-oFIHvXhlz/DUgF0kq5B1CqxIDjIJwh9iDeUUGQUcvgiGz7Wdw03McEO7CfLBy7QKGdsydcMCgO9jFNBAFCtFcA==
@@ -790,7 +786,7 @@ bs58@^4.0.0:
   dependencies:
     base-x "^3.0.2"
 
-bs58check@<3.0.0, bs58check@^2.1.2:
+bs58check@2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/bs58check/-/bs58check-2.1.2.tgz#53b018291228d82a5aa08e7d796fdafda54aebfc"
   integrity sha512-0TS1jicxdU09dwJMNZtVAfzPi6Q6QeN0pM1Fkzrjn+XYHvzMKPU3pHVpva+769iNVSfIYWf7LJ6WR+BuuMf8cA==
@@ -1549,7 +1545,7 @@ etag@~1.8.1:
   resolved "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
-eth-lib@^0.2.8:
+eth-lib@0.2.8:
   version "0.2.8"
   resolved "https://registry.npmjs.org/eth-lib/-/eth-lib-0.2.8.tgz#b194058bef4b220ad12ea497431d6cb6aa0623c8"
   integrity sha512-ArJ7x1WcWOlSpzdoTBX8vkwlkSQ85CjjifSZtV4co64vWxSV8geWfPI9x4SVYu3DSxnX4yWFVTtGL+j9DUFLNw==
@@ -3535,7 +3531,7 @@ mz@^2.4.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nan@^2.12.1:
+nan@^2.10.0, nan@^2.12.1:
   version "2.13.2"
   resolved "https://registry.npmjs.org/nan/-/nan-2.13.2.tgz#f51dc7ae66ba7d5d55e1e6d4d8092e802c9aefe7"
   integrity sha512-TghvYc72wlMGMVMluVo9WRJc0mB8KxxF/gZ4YYFy7V2ZQX9l7rgbPg7vjS9mt6U5HXODVFVI2bOduCzwOMv/lw==
@@ -4183,13 +4179,6 @@ randomatic@^3.0.0:
     kind-of "^6.0.0"
     math-random "^1.0.1"
 
-randombytes@^2.0.6:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
-  integrity sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==
-  dependencies:
-    safe-buffer "^5.1.0"
-
 range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
@@ -4451,7 +4440,7 @@ rxjs@^6.3.3:
   dependencies:
     tslib "^1.9.0"
 
-safe-buffer@5.1.2, safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
+safe-buffer@5.1.2, safe-buffer@^5.0.1, safe-buffer@^5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   integrity sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
@@ -4990,16 +4979,16 @@ timers-ext@^0.1.5:
     es5-ext "~0.10.46"
     next-tick "1"
 
-tiny-secp256k1@^1.0.1:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/tiny-secp256k1/-/tiny-secp256k1-1.1.0.tgz#86bf932e153641d6fd23c3faa470bf8c727452e3"
-  integrity sha512-DIl0SCUIVcPrk/oOiq8/YgQ69Beayw4XSW2icyXJN8xfKMmxo5XM8gXVG1Ex+rYsHg2xuEpNFeeU6J4CtqQFrA==
+tiny-secp256k1@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/tiny-secp256k1/-/tiny-secp256k1-1.0.1.tgz#fc6f96529c22b92be91e12de4040fdd9245f7835"
+  integrity sha512-Wz2kMPWtCI5XBftFeF3bUL8uz2+VlasniKwOkRPjvL7h1QVd9rbhrve/HWUu747kJKzVf1XHonzcdM4Ut8fvww==
   dependencies:
     bindings "^1.3.0"
     bn.js "^4.11.8"
     create-hmac "^1.1.7"
     elliptic "^6.4.0"
-    nan "^2.12.1"
+    nan "^2.10.0"
 
 tmpl@1.0.x:
   version "1.0.4"
@@ -5173,11 +5162,6 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeforce@^1.18.0:
-  version "1.18.0"
-  resolved "https://registry.npmjs.org/typeforce/-/typeforce-1.18.0.tgz#d7416a2c5845e085034d70fcc5b6cc4a90edbfdc"
-  integrity sha512-7uc1O8h1M1g0rArakJdf0uLRSSgFcYexrVoKo+bzJd32gd4gDy2L/Z+8/FjPnU9ydY3pEnVPtr9FyscYY60K1g==
-
 typeorm@^0.2.16:
   version "0.2.16"
   resolved "https://registry.npmjs.org/typeorm/-/typeorm-0.2.16.tgz#cfc119254e21f37410a60616a726cad97a8d95f6"
@@ -5302,11 +5286,6 @@ use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.npmjs.org/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha512-cwESVXlO3url9YWlFW/TA9cshCEhtu7IKJ/p5soJ/gGpj7vbvFrAY/eIioQ6Dw23KjZhYgiIo8HOs1nQ2vr/oQ==
-
-utf8@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/utf8/-/utf8-3.0.0.tgz#f052eed1364d696e769ef058b183df88c87f69d1"
-  integrity sha512-E8VjFIQ/TyQgp+TZfS6l8yp/xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJpO3SN7zdX4DeomTrwaseCHovfpFcqQ==
 
 util-deprecate@~1.0.1:
   version "1.0.2"
@@ -5435,13 +5414,6 @@ widest-line@^2.0.0:
   integrity sha512-Ba5m9/Fa4Xt9eb2ELXt77JxVDV8w7qQrH0zS/TWSJdLyAwQjWoOzpzj5lwVftDz6n/EOu3tNACS84v509qwnJA==
   dependencies:
     string-width "^2.1.1"
-
-wif@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.npmjs.org/wif/-/wif-2.0.6.tgz#08d3f52056c66679299726fade0d432ae74b4704"
-  integrity sha1-CNP1IFbGZnkplyb63g1DKudLRwQ=
-  dependencies:
-    bs58check "<3.0.0"
 
 wordwrap@~0.0.2:
   version "0.0.3"

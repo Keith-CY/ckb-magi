@@ -1,4 +1,4 @@
-import { ConfigService } from './../config/config.service'
+import { ConfigService } from '../../config/config.service'
 import { Injectable } from '@nestjs/common'
 import CKB from '@nervosnetwork/ckb-sdk-core'
 import { Subject } from 'rxjs'
@@ -8,26 +8,25 @@ import { BlocksService } from '../blocks/blocks.service'
 @Injectable()
 export class SyncService {
   public ckb: CKB
-  public subject = new Subject()
+  public blockNumberSubject = new Subject()
+  public blockHashSubject = new Subject()
+  public blockSubject = new Subject()
   private timer = null
   private url = ''
   private interval = 1000
-  constructor(
-    private readonly blocksService: BlocksService,
-    private readonly configService: ConfigService,
-  ) {
+  constructor(private readonly configService: ConfigService) {
     this.url = this.configService.get('URL')
     this.interval = this.configService.get('INTERVAL')
     this.ckb = new CKB(this.url)
     this.start()
-    this.log()
+    this.propagate()
   }
   start() {
     this.timer = setInterval(() => {
       this.ckb.rpc
         .getTipBlockNumber()
         .then(num => {
-          this.subject.next(num)
+          this.blockNumberSubject.next(num)
         })
         .catch(err => console.error(err.message))
     }, this.interval)
@@ -35,9 +34,15 @@ export class SyncService {
   stop() {
     clearInterval(this.timer)
   }
-  log() {
-    this.subject.pipe(distinctUntilChanged()).subscribe(num => {
-      console.log(num)
-    })
+
+  propagate() {
+    this.blockNumberSubject
+      .pipe(distinctUntilChanged())
+      .subscribe(async num => {
+        const hash = await this.ckb.rpc.getBlockHash(`${num}`)
+        this.blockHashSubject.next(hash)
+        const block = await this.ckb.rpc.getBlock(hash)
+        this.blockSubject.next(block)
+      })
   }
 }
