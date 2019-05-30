@@ -1,48 +1,50 @@
 import { ConfigService } from '../../config/config.service'
 import { Injectable } from '@nestjs/common'
-import CKB from '@nervosnetwork/ckb-sdk-core'
-import { Subject } from 'rxjs'
-import { distinctUntilChanged } from 'rxjs/operators'
-import { BlocksService } from '../blocks/blocks.service'
+import axios from 'axios'
+import { ReplaySubject, BehaviorSubject } from 'rxjs'
+
+const api = {
+  blocks: '/api/v1/blocks',
+}
 
 @Injectable()
 export class SyncService {
-  public ckb: CKB
-  public blockNumberSubject = new Subject()
-  public blockHashSubject = new Subject()
-  public blockSubject = new Subject()
+  public blocks$ = new ReplaySubject()
+  public total$ = new BehaviorSubject(0)
   private timer = null
   private url = ''
   private interval = 1000
   constructor(private readonly configService: ConfigService) {
     this.url = this.configService.get('URL')
     this.interval = this.configService.get('INTERVAL')
-    this.ckb = new CKB(this.url)
-    this.start()
-    this.propagate()
   }
   start() {
+    this.stop()
+    this.fetchBlocks()
     this.timer = setInterval(() => {
-      this.ckb.rpc
-        .getTipBlockNumber()
-        .then(num => {
-          this.blockNumberSubject.next(num)
-        })
-        .catch(err => console.error(err.message))
+      this.fetchBlocks
     }, this.interval)
+    return {
+      code: 200,
+    }
   }
   stop() {
     clearInterval(this.timer)
+    return { code: 200 }
   }
 
-  propagate() {
-    this.blockNumberSubject
-      .pipe(distinctUntilChanged())
-      .subscribe(async num => {
-        const hash = await this.ckb.rpc.getBlockHash(`${num}`)
-        this.blockHashSubject.next(hash)
-        const block = await this.ckb.rpc.getBlock(hash)
-        this.blockSubject.next(block)
+  private fetchBlocks = () => {
+    axios
+      .get(`${this.url}${api.blocks}`, {
+        headers: {
+          'Content-Type': 'application/vnd.api+json',
+          Accept: 'application/vnd.api+json',
+        },
       })
+      .then(({ data: { data, meta } }) => {
+        this.blocks$.next(data.map(({ attributes }) => attributes))
+        this.total$.next(meta.total)
+      })
+      .catch(console.error)
   }
 }

@@ -1,5 +1,3 @@
-import { CreateBlockDto } from './create-block.dto'
-import { Block } from './block.interface'
 import { BlocksService } from './blocks.service'
 import { Controller, Get, Post, Body } from '@nestjs/common'
 
@@ -10,10 +8,5 @@ export class BlocksController {
   @Get()
   async findAll() {
     return this.blockService.findAll()
-  }
-
-  @Post()
-  async create(@Body() createBlockDto: CreateBlockDto) {
-    return this.blockService.create(createBlockDto)
   }
 }
