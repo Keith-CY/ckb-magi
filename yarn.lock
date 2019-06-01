@@ -285,45 +285,45 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
-"@nervosnetwork/ckb-sdk-address@^0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@nervosnetwork/ckb-sdk-address/-/ckb-sdk-address-0.12.1.tgz#97a7d1bc9c3838d88ad123671d9698258c816daa"
-  integrity sha512-jwDH4FB1WPJPDJq6nwHeSjzPiMCQOoZaPf1cWLo4SYMwmr995U5e0XHO0yfCQrfX4E9xETdpjjy/mDk8b6TB1A==
+"@nervosnetwork/ckb-sdk-address@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@nervosnetwork/ckb-sdk-address/-/ckb-sdk-address-0.13.0.tgz#e2304dd7bf0b6eeb9048ff82a78f56b1729041f5"
+  integrity sha512-96xgcuIJX/F3PRyDCofdT992vjvZ6LDoGPtwv6EYgjBn9Ky+KOU6oM82/a4kMK2hdZnIDZyZz3v7RLIwTSP0TQ==
   dependencies:
-    "@nervosnetwork/ckb-sdk-utils" "^0.12.1"
-    "@nervosnetwork/ckb-types" "^0.12.1"
+    "@nervosnetwork/ckb-sdk-utils" "0.13.0"
+    "@nervosnetwork/ckb-types" "0.13.0"
 
-"@nervosnetwork/ckb-sdk-core@0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@nervosnetwork/ckb-sdk-core/-/ckb-sdk-core-0.12.1.tgz#101578b7f8e42d16adf2160a95a9a7b0a801f4a9"
-  integrity sha512-t0SBGExM5ghN/HGGC7wLdT1NT4Vk/tx+p2A29uFpwyXvh7RkNG2+AOoKSwuQTjeZsSnANs+ZxXLTF4Ivfy5Evw==
+"@nervosnetwork/ckb-sdk-core@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@nervosnetwork/ckb-sdk-core/-/ckb-sdk-core-0.13.0.tgz#100770b26ea6bea84f93ad6bb3515c01f209d537"
+  integrity sha512-1upPuWMLmj33anfZQ5oGjaJRZ+KjVh1E21256WhlqxS/9d3rHlQGlW/Lx2TNoI3plLYICywkDxvozVHWFwJahA==
   dependencies:
-    "@nervosnetwork/ckb-sdk-address" "^0.12.1"
-    "@nervosnetwork/ckb-sdk-rpc" "^0.12.1"
-    "@nervosnetwork/ckb-sdk-utils" "^0.12.1"
-    "@nervosnetwork/ckb-types" "^0.12.1"
+    "@nervosnetwork/ckb-sdk-address" "0.13.0"
+    "@nervosnetwork/ckb-sdk-rpc" "0.13.0"
+    "@nervosnetwork/ckb-sdk-utils" "0.13.0"
+    "@nervosnetwork/ckb-types" "0.13.0"
 
-"@nervosnetwork/ckb-sdk-rpc@^0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@nervosnetwork/ckb-sdk-rpc/-/ckb-sdk-rpc-0.12.1.tgz#10888809237be3510ccd17c450f95795ffa4372a"
-  integrity sha512-h7ydD7SxYyiVLiPHv5A/c6NicrAD3efxp5ED/iUB67NSmN5sncvZs7nXz72uKyBydq+74Pqg27nOhLic0OL+pg==
+"@nervosnetwork/ckb-sdk-rpc@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@nervosnetwork/ckb-sdk-rpc/-/ckb-sdk-rpc-0.13.0.tgz#2037b1cfc53f4625673fec3c7e2d336bc894da12"
+  integrity sha512-T5gJBrRcTYNDcMf0AE2jPWD9mWH0ZTmiBVrbddoR/F57fJ4jFvfrXMFdgnla6A70+AWOB7D4ClNWrJTi9wQhIw==
   dependencies:
-    "@nervosnetwork/ckb-sdk-utils" "^0.12.1"
+    "@nervosnetwork/ckb-sdk-utils" "0.13.0"
     axios "0.18.0"
 
-"@nervosnetwork/ckb-sdk-utils@^0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@nervosnetwork/ckb-sdk-utils/-/ckb-sdk-utils-0.12.1.tgz#34bf77081e777b3963bc7b5ee099cfe4fc30b82d"
-  integrity sha512-Bfp5z66waH6hJDAegcsG2Z5HcLwQ28PPlYG6ymt9qPe5XckCHHoXmWhVaFgsZgrU4r4vEMDYRAri9C06pbFshA==
+"@nervosnetwork/ckb-sdk-utils@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@nervosnetwork/ckb-sdk-utils/-/ckb-sdk-utils-0.13.0.tgz#e4de937ab5688f96282b37f3eea082cf7f37d944"
+  integrity sha512-H+Mg7y/fJlRpD0dSSwN69eWnV8sg3G/GlIxPoK4TCUi7QBX/dkxy1tTQh3/jLkiEq4bDKWxxBTgD8qNyGStjlA==
   dependencies:
-    "@nervosnetwork/ckb-types" "^0.12.1"
+    "@nervosnetwork/ckb-types" "0.13.0"
     blake2b-wasm "1.1.7"
-    elliptic "^6.4.1"
+    elliptic "6.4.1"
 
-"@nervosnetwork/ckb-types@^0.12.1":
-  version "0.12.1"
-  resolved "https://registry.yarnpkg.com/@nervosnetwork/ckb-types/-/ckb-types-0.12.1.tgz#d56dc6c22aa6a8b3687097dc447e25d9c611e61a"
-  integrity sha512-5pr8959sAqu7DQX9Yl8YovfI1Oxsvy8G8ol+FhiN1eAftmlJaCijLE9h2AoaUVrZlQ3IFcyf0M+zHVBR3IcDpw==
+"@nervosnetwork/ckb-types@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@nervosnetwork/ckb-types/-/ckb-types-0.13.0.tgz#dfafdf4d02a5e0d86fe7fd72a194f7c105ad69a5"
+  integrity sha512-5DLaThQsyEjNptp1LXWNOX5can4uqLKSZeXZI4xw0RlmbIWZnQ/ViVOILIcS7LYQCeBsmT2m9vqIqMnxRcToKQ==
 
 "@nestjs/common@6.2.4":
   version "6.2.4"
@@ -1655,7 +1655,7 @@ ee-first@1.1.1:
   resolved "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-elliptic@^6.4.1:
+elliptic@6.4.1:
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.4.1.tgz#c2d0b7776911b86722c632c3c06c60f2f819939a"
   integrity sha512-BsXLz5sqX8OHcsh7CqBMztyXARmGQ3LWPtGjJi6DiJHq5C/qvi9P3OqgswKSDftbu8+IoI/QDTAm2fFnQ9SZSQ==
