@@ -22,7 +22,7 @@
     "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "@nervosnetwork/ckb-sdk-core": "0.16.0",
+    "@nervosnetwork/ckb-sdk-core": "0.17.0",
     "@nestjs/common": "6.5.3",
     "@nestjs/core": "6.5.3",
     "@nestjs/platform-express": "6.5.3",
